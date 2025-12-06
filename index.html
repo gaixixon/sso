@@ -134,12 +134,12 @@
       }, []);
 
       async function login() {
-        window.location = SSO + "/login?redirect=" + encodeURIComponent(FRONTEND);
+        window.location = SSO + "/api/login?redirect=" + encodeURIComponent(FRONTEND);
       }
 
       async function logout() {
         sessionToken = null;
-        window.location = SSO + "/logout?redirect=" + encodeURIComponent(FRONTEND);
+        window.location = SSO + "/api/logout?redirect=" + encodeURIComponent(FRONTEND);
       }
 
       async function loadNotes() {
